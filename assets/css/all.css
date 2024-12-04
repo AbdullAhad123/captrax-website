@@ -183,3 +183,68 @@ html {
 .navbarSection .nav-link:hover {
     color: var(--dark_primary) !important;
 }
+
+.nav_dropdown.active .nav-link {
+    color: var(--primary) !important;
+}
+
+.nav_dropdown .nav_dropdown_link i.bx {
+    transition: 0.3s;
+}
+
+.nav_dropdown.active .nav_dropdown_link i.bx {
+    transform: rotateZ(-180deg);
+}
+
+.nav_dropdown_menu {
+    height: fit-content;
+    width: 100%;
+    background: var(--ui_white);
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.nav_dropdownImageContainer {
+    height: 100%;
+    width: 100%;
+    background: url(../img/header.jpg) center;
+    background-size: cover;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.nav_dropdown_menu_linkItem {
+    color: var(--ui_dark);
+    transition: 0.3s;
+}
+
+.nav_dropdown_menu_linkItem:hover {
+    color: var(--dark_primary) !important;
+}
+
+
+.navSidebarMoreLinks {
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    color: var(--ui_dark);
+    transition: 0.3s;
+}
+
+.navSidebarMoreLinks:hover {
+    color: var(--dark_primary);
+}
+
+.navSidebarMoreLinks .arrowicon {
+    position: relative;
+    left: 5px;
+    transition: 0.2s;
+}
+
+.navSidebarMoreLinks:hover.navSidebarMoreLinks .arrowicon {
+    left: 5px;
+}

@@ -15,79 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
-        #topbar {
-            height: auto;
-            width: auto;
-            padding: 0.6rem 0;
-            /* background: var(--dark_primary); */
-        }
-
-        .nav_dropdown.active .nav-link {
-            color: var(--primary) !important;
-        }
-
-        .nav_dropdown .nav_dropdown_link i.bx {
-            transition: 0.3s;
-        }
-
-        .nav_dropdown.active .nav_dropdown_link i.bx {
-            transform: rotateZ(-180deg);
-        }
-
-        .nav_dropdown_menu {
-            height: fit-content;
-            width: 100%;
-            background: var(--ui_white);
-            position: absolute;
-            top: 90px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: none;
-        }
-
-        .nav_dropdownImageContainer {
-            height: 100%;
-            width: 100%;
-            background: url(assets/img/header.jpg) center;
-            background-size: cover;
-            /* border-top-right-radius: 30px;
-            border-bottom-right-radius: 30px; */
-        }
-
-        .pointer {
-            cursor: pointer;
-        }
-
-        .nav_dropdown_menu_linkItem {
-            color: var(--ui_dark);
-            transition: 0.3s;
-        }
-
-        .nav_dropdown_menu_linkItem:hover {
-            color: var(--dark_primary) !important;
-        }
-        
-
-        .navSidebarMoreLinks {
-            text-decoration: none !important;
-            font-size: 0.9rem !important;
-            color: var(--ui_dark);
-            transition: 0.3s;
-        }
-
-        .navSidebarMoreLinks:hover {
-            color: var(--dark_primary);
-        }
-        
-        .navSidebarMoreLinks .arrowicon {
-            position: relative;
-            left: 5px;            
-            transition: 0.2s;
-        }
-        
-        .navSidebarMoreLinks:hover.navSidebarMoreLinks .arrowicon {
-            left: 5px;
-        }
+       
     </style>
 </head>
 <body>
@@ -112,7 +40,7 @@
         </section>
 
         <section>
-            <nav class="navbar navbar-expand-lg navbarSection position-fixed top-0 end-0 start-0">
+            <nav class="navbar navbar-expand-lg navbarSection position-sticky top-0 end-0 start-0">
                 <div class="container-lg wrapper">
                     <a class="navbar-brand m-0 d-inline-flex align-items-center" href="#">
                         <img src="assets/img/captrax_logo.png" width="65" height="65" alt="captrax logo">
@@ -356,64 +284,6 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- <div class="col-8 py-4">
-                                            <div class="row m-0">
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 py-2 my-2">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <i class="bx bx-time fs-3"></i>
-                                                        <div>
-                                                            <p class="fs-6 fw-medium text_dark_primary m-0">HOS Compliance</p>
-                                                            <p class="fs_7 text_ui_dark m-0">Lorem ipsum dolor sit amet consectetur.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -453,26 +323,26 @@
 
         <header></header>          
 
-          
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, assumenda! Eius, laborum ipsa tempore ad quisquam ea soluta dolorem voluptate veniam debitis! Quibusdam, omnis cum corporis harum repellendus tempore aliquid.
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
 
     </div>
 
@@ -498,6 +368,15 @@
             // Close all other menus when one is opened
             $(".nav_dropdown").not($(this).parent()).removeClass('active').find('.nav_dropdown_menu').removeClass('show').stop(true, true).slideUp(400);
         });
+
+        $(window).on('scroll', function () {
+            const scrolled = $(window).scrollTop();
+            if (scrolled >= 40) {
+                $(".navbarSection").removeClass('position-sticky').addClass('position-fixed')      
+            } else {
+                $(".navbarSection").addClass('position-sticky').removeClass('position-fixed')      
+            }
+        })
 
     </script>
 </body>
