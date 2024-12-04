@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #1EB858;
+    --dark_primary: #13a24a;
+    --light_primary: #39D472;
+    --secondary: #119ac0;
+    --dark_secondary: #006885;
+    --light_secondary: #40b0ce;
+    /* --light: #e8f3ef;
+    --dark: #403D39; */
+    --ui_white: #fdfffe;
+    --ui_dark: #353535;
+    --text_light: #ffffffaf;
+    --text_dark: #1d1d1daf;
+    --light: #fffffff6;
+    --white: #ffffff;
+    --dark: #000000f6;
+    --black: #000000;
+}
+
+body {
+    background: var(--ui_white) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* text  */
+
+.text_light {
+    color: var(--light) !important;
+}
+
+.text_dark {
+    color: var(--dark) !important;
+}
+
+.text_secondary {
+    color: var(--secondary) !important;
+}
+
+.text_primary {
+    color: var(--primary) !important;
+}
+
+.text_light_primary {
+    color: var(--light_primary) !important;
+}
+
+.text_dark_primary {
+    color: var(--dark_primary) !important;
+}
+
+.text_lighter {
+    color: var(--text_light) !important;
+}
+
+.text_darker {
+    color: var(--text_dark) !important;
+}
+
+.text_ui_light {
+    color: var(--ui_white) !important;
+}
+
+.text_ui_dark {
+    color: var(--ui_dark) !important;
+}
+
+/* backgrounds  */
+
+.bg_primary {
+    background: var(--primary) !important;
+}
+
+.gradient_bg_primary {
+    background: linear-gradient(271deg, var(--dark_primary), var(--primary));
+}
+
+.bg_dark_primary {
+    background: var(--dark_primary) !important;
+}
+
+.bg_secondary {
+    background: var(--secondary) !important;
+}
+
+/* default  */
+.wrapper {
+    max-width: 1180px !important;
+}
+
+.fs_4 {
+    font-size: 1.35rem !important;
+}
+
+.fs_5 {
+    font-size: 1.1rem !important;
+}
+
+.fs_6 {
+    font-size: 0.92rem !important;
+}
+
+.fs_7 {
+    font-size: 0.85rem !important;
+}
+
+.fs_xs {
+    font-size: 0.813rem !important;
+}
+
+.fs_vs {
+    font-size: 0.75rem !important;
+}
+
+/* buttons  */
+.btn_outline_primary {
+    text-decoration: none !important;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary) !important;
+    fill: var(--primary) !important;
+    border-radius: 5px;
+    padding: 0.375rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_outline_primary:hover {
+    background: var(--primary);
+    color: var(--ui_white) !important;
+    fill: var(--ui_white) !important;
+}
+
+.btn_primary {
+    text-decoration: none !important;
+    background: linear-gradient(271deg, var(--dark_primary), var(--primary));
+    border: 1px solid var(--primary);
+    color: var(--ui_white) !important;
+    fill: var(--ui_white) !important;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_primary:hover {
+    color: var(--white) !important;
+}
+
+/* navbar  */
+.logoTxt {
+    /* background: linear-gradient(182deg, #257a45, #56f18e); */
+    background: linear-gradient(178deg, #257a45, #28aa5a, #56f18e);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbarSection {
+    background: var(--ui_white) !important;
+}
+
+.navbarSection.isMoving {
+    box-shadow: 0 0 10px 0 black;
+    background: var(--ui_white) !important;
+}
+
+.navbarSection .navText {
+    font-size: 0.92rem !important;
+}
+
+.navbarSection .nav-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    transition: 0.3s;
+    color: var(--ui_dark) !important;
+}
+
+.navbarSection .nav-link:hover {
+    color: var(--dark_primary) !important;
+}
