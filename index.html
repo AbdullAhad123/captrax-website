@@ -40,7 +40,7 @@
         </section>
 
         <section>
-            <nav class="navbar navbar-expand-lg navbarSection position-sticky top-0 end-0 start-0">
+            <nav class="navbar navbar-expand-lg navbarSection">
                 <div class="container-lg wrapper">
                     <a class="navbar-brand m-0 d-inline-flex align-items-center" href="#">
                         <img src="assets/img/captrax_logo.png" width="65" height="65" alt="captrax logo">
@@ -67,7 +67,7 @@
                             <div class="nav_dropdown_menu">
                                 <div class="row h-100 m-0">
                                     <div class="col-4 p-0">
-                                        <div class="nav_dropdownImageContainer"></div>
+                                        <div class="nav_dropdownImageContainer features"></div>
                                     </div>
                                     <div class="col-8 py-4">
                                         <div class="row m-0 mb-4">
@@ -138,7 +138,7 @@
                             <div class="nav_dropdown_menu">
                                 <div class="row h-100 m-0">
                                     <div class="col-4 p-0">
-                                        <div class="nav_dropdownImageContainer"></div>
+                                        <div class="nav_dropdownImageContainer solutions"></div>
                                     </div>
                                     <div class="col-8 py-4">
                                         <div class="row m-0 mb-4">
@@ -487,7 +487,26 @@
             </div>
         </section>
 
-        <header></header>          
+        <header>
+            <video src="assets/img/header_video.mp4" class="headerMedia" muted loop autoplay></video>
+            <div id="hero">
+                <div class="container-lg wrapper">
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <h1 class="text_ui_light fw-semibold my-1 display-5">Manage your fleet easily on one platform</h1>
+                        <p class="text-white-75 my-2">Best and affordable solutions for enterprises and small organizations. Start your journey today with Captrax!</p>
+                        <div class="d-flex align-items-center gap-sm-3 gap-2 flex-wrap my-4">
+                            <a href="#" class="btn_primary d-inline-flex align-items-center rounded-pill">
+                                <span class="fs_6">Get Started Today</span>
+                            </a>
+                            <a href="#" class="text_ui_light fw-medium fs_6 d-inline-flex align-items-baseline text-decoration-none">
+                                <span>See pricings</span>
+                                <span class="mdi mdi-chevron-right fs_5"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>          
 
 
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
@@ -535,14 +554,14 @@
             $(".nav_dropdown").not($(this).parent()).removeClass('active').find('.nav_dropdown_menu').removeClass('show').stop(true, true).slideUp(400);
         });
 
-        $(window).on('scroll', function () {
-            const scrolled = $(window).scrollTop();
-            if (scrolled >= 40) {
-                $(".navbarSection").removeClass('position-sticky').addClass('position-fixed')      
-            } else {
-                $(".navbarSection").addClass('position-sticky').removeClass('position-fixed')      
-            }
-        });
+        // $(window).on('scroll', function () {
+        //     const scrolled = $(window).scrollTop();
+        //     if (scrolled >= 40) {
+        //         $(".navbarSection").removeClass('position-sticky').addClass('position-fixed')      
+        //     } else {
+        //         $(".navbarSection").addClass('position-sticky').removeClass('position-fixed')      
+        //     }
+        // });
 
         $(".dropdownState").click(function () {
     const $dropdownElement = $(this).siblings(".collapse");

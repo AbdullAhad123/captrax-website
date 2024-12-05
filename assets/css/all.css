@@ -72,6 +72,10 @@ html {
     color: var(--ui_dark) !important;
 }
 
+.text-white-75 {
+    color: #ffffffc7 !important;
+}
+
 /* backgrounds  */
 
 .bg_primary {
@@ -213,12 +217,21 @@ html {
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    z-index: 1;
 }
 
 .nav_dropdownImageContainer {
-    height: 100%;
+    min-height: 350px;
     width: 100%;
-    background: url(../img/header.jpg) center;
+}
+
+.nav_dropdownImageContainer.features {
+    background: url(../img/features_dropdown_img.jpg) center;
+    background-size: cover;
+}
+
+.nav_dropdownImageContainer.solutions {
+    background: url(../img/solutions_dropdown_img.jpg) center;
     background-size: cover;
 }
 
