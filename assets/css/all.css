@@ -154,10 +154,18 @@ html {
 
 /* navbar  */
 .logoTxt {
-    /* background: linear-gradient(182deg, #257a45, #56f18e); */
     background: linear-gradient(178deg, #257a45, #28aa5a, #56f18e);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+@media (max-width: 425px) {
+    .logoTxt {
+        display: none !important;
+    }
+    .topbarlinks {
+        font-size: 0.785rem !important;
+    }
 }
 
 .navbarSection {
@@ -247,4 +255,48 @@ html {
 
 .navSidebarMoreLinks:hover.navSidebarMoreLinks .arrowicon {
     left: 5px;
+}
+
+#navSidebar {
+    max-width: 375px;
+    background: var(--ui_white) !important;
+}
+
+.navSidebarlink {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: var(--ui_dark) !important;
+    font-size: 0.95rem !important;
+    padding: 0.15rem 0.4rem;
+    transition: 0.3s;
+}
+
+.navSidebarlink:hover {
+    color: var(--dark_primary) !important;
+}
+
+.navSidebarCollapselinks {
+    text-decoration: none !important;
+    color: #393939 !important;
+    padding: 0.1rem !important;
+    font-size: 0.875rem !important;
+    transition: 0.3s;
+}
+
+.navSidebarCollapselinks:hover {
+    color: var(--dark_primary) !important;
+}
+
+.navSidebarlink .mdi-chevron-right::before {
+    rotate: 0deg;
+    transition: 0.2s;
+}
+
+.navSidebarlink.active {
+    color: var(--dark_primary) !important;
+}
+
+.navSidebarlink.active .mdi-chevron-right::before {
+    rotate: 90deg;
 }
