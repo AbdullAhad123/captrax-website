@@ -16,9 +16,29 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .aboutDisplayCards {
-            height: 250px;
+            height: fit-content;
             width: auto;
-            background: #e8fcf1;
+            background: linear-gradient(45deg, #eafbf1, #c2ebd5);
+            overflow: hidden;
+        }
+        .aboutDisplayCards .title {
+            color: #295c3c;
+        }
+
+        .aboutDisplayImage {
+            height: 450px;
+            width: 100%;
+            position: relative;
+        }
+
+        .aboutDisplayImage img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -664,6 +684,55 @@
         </section>
 
         <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="mb-3">
+                    <p class="text-center fs-5 text_dark_primary m-0 text-uppercase fw-semibold">Why choose captrax</p>
+                    <h2 class="text-center text_ui_dark fw-bold fs-1">What makes us different</h2>
+                    <div class="heading_underline mx-auto"></div>
+                </div>
+                <div>
+                    <div class="aboutDisplayCards rounded-4 my-4">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-6 col-12 align-self-center">
+                                <div class="p-3 py-4">
+                                    <h3 class="fs-6 text_ui_dark fw-semibold m-0">Efficient System</h3>
+                                    <p class="fs-2 title fw-semibold m-0">Streamline Your Operations with Ease</p>
+                                    <p class="text-dark-emphasis fs_6">Manage your schedules and monitor progress easily with our advanced system designed for productivity and efficiency.</p>
+                                    <div class="d-flex align-items-center gap-2 my-3">
+                                        <span class="mdi mdi-map-marker-path title fs-3"></span>
+                                        <div>
+                                            <p class="fs_6 fw-semibold text_ui_dark m-0">Real-Time Monitoring</p>
+                                            <p class="fs_7 text_ui_dark m-0">Track and update tasks instantly for smooth operations.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 my-3">
+                                        <span class="mdi mdi-calendar-cursor title fs-3"></span>
+                                        <div>
+                                            <p class="fs_6 fw-semibold text_ui_dark m-0">Seamless Scheduling</p>
+                                            <p class="fs_7 text_ui_dark m-0">Organize and adjust plans effortlessly to save time.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 my-3">
+                                        <span class="mdi mdi-cellphone-key title fs-3"></span>
+                                        <div>
+                                            <p class="fs_6 fw-semibold text_ui_dark m-0">Enhanced Productivity</p>
+                                            <p class="fs_7 text_ui_dark m-0">Achieve more with optimized tools for better workflow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-12">
+                                <div class="aboutDisplayImage">
+                                    <img src="assets/img/driver_experience_img.jpg" width="400" height="400" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
             <div class="row m-0 align-items-center">
                 <div class="col-lg-6 col-md-6 col-12 my-2" data-aos="zoom-out" data-aos-delay="250">
                     <img src="assets/img/driver_app_graphics.png" width="550" class="img-fluid" alt="">
@@ -674,23 +743,6 @@
                     <div class="application_links d-flex align-items-center gap-1">
                         <img src="assets/img/google_play.webp" width="160" alt="">
                         <img src="assets/img/app_store.webp" width="160" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="my-5">
-            <div class="container-lg wrapper">
-                <div class="mb-3">
-                    <p class="text-center fs-5 text_dark_primary m-0 text-uppercase fw-semibold">Why choose captrax</p>
-                    <h2 class="text-center text_ui_dark fw-bold fs-1">What makes us different</h2>
-                    <div class="heading_underline mx-auto"></div>
-                </div>
-                <div>
-                    <div class="aboutDisplayCards rounded p-3 my-4">
-                        <h3 class="fs-5 fw-semibold m-0">Efficient System</h3>
-                        <p class="text_ui_dark fw-medium mb-2">Streamline Your Operations with Ease</p>
-                        <p class="fs_6 text_ui_dark">Our advanced system ensures seamless tracking and monitoring, empowering you to manage your tasks effortlessly. Whether it’s organizing schedules or monitoring progress, our tools are designed to enhance productivity and save time.</p>
                     </div>
                 </div>
             </div>
