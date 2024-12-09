@@ -13,9 +13,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-       
+        .aboutDisplayCards {
+            height: 250px;
+            width: auto;
+            background: #e8fcf1;
+        }
     </style>
 </head>
 <body>
@@ -491,10 +495,10 @@
             <video src="assets/img/header_video.mp4" class="headerMedia" muted loop autoplay></video>
             <div id="hero">
                 <div class="container-lg wrapper">
-                    <div class="col-lg-6 col-md-8 col-12">
-                        <h1 class="text_ui_light fw-semibold my-1 display-5">Manage your fleet easily on one platform</h1>
-                        <p class="text-white-75 my-2">Best and affordable solutions for enterprises and small organizations. Start your journey today with Captrax!</p>
-                        <div class="d-flex align-items-center gap-sm-3 gap-2 flex-wrap my-4">
+                    <div class="col-lg-6 col-md-8 col-12 mb-4">
+                        <h1 class="text_ui_light fw-semibold my-1 display-5" data-aos="fade-right" data-aos-delay="600">Manage your fleet easily on one platform</h1>
+                        <p class="text-white-75 my-2" data-aos="fade-right" data-aos-delay="600">Best and affordable solutions for enterprises and small organizations. Start your journey today with Captrax!</p>
+                        <div class="d-flex align-items-center gap-sm-3 gap-2 flex-wrap my-4" data-aos="fade-right" data-aos-delay="800">
                             <a href="#" class="btn_primary d-inline-flex align-items-center rounded-pill">
                                 <span class="fs_6">Get Started Today</span>
                             </a>
@@ -508,34 +512,199 @@
             </div>
         </header>          
 
+        <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="mb-3">
+                    <h2 class="text-center text_ui_dark fw-semibold">How we help organizations</h2>
+                    <div class="heading_underline mx-auto"></div>
+                </div>
+                <p class="text-center text_ui_dark">We connect drivers, management, and teams on one platform to enable seamless communication and streamlined operations for better organizational productivity and success.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="displayAboutCards d-flex align-items-end rounded">
+                            <img src="assets/img/driver_experience_img.jpg" alt="">
+                            <div class="displayAboutCardsOverlay">
+                                <div class="p-3">
+                                    <h3 class="text_ui_light my-1 fw-semibold fs-5">Driver Experience</h3>
+                                    <p class="text-white-75 fs_7 mb-2">We enhance driver productivity with seamless tools and personalized insights for better journeys.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3 pt-md-5" data-aos="fade-up" data-aos-delay="450">
+                        <div class="displayAboutCards d-flex align-items-end rounded">
+                            <img src="assets/img/business_performance_img.jpg" alt="">
+                            <div class="displayAboutCardsOverlay">
+                                <div class="p-3">
+                                    <h3 class="text_ui_light my-1 fw-semibold fs-5">Business Performance</h3>
+                                    <p class="text-white-75 fs_7 mb-2">We boost business efficiency with data-driven insights and streamlined operations for higher profitability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="displayAboutCards d-flex align-items-end rounded">
+                            <img src="assets/img/fleet_safety_img.jpg" alt="">
+                            <div class="displayAboutCardsOverlay">
+                                <div class="p-3">
+                                    <h3 class="text_ui_light my-1 fw-semibold fs-5">Fleet Safety</h3>
+                                    <p class="text-white-75 fs_7 mb-2">We prioritize fleet safety with proactive measures and real-time monitoring for accident prevention.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nostrum velit placeat sequi nam qui voluptate voluptas itaque sapiente tempore enim doloremque, voluptatem ea ipsam dolore beatae? Accusantium, nihil!
+        <section class="my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12 my-2 px-4">
+                    <h2 class="text_ui_dark fw-bold display-5"><span class="text_primary_shade">Smarter</span> fleet monitoring system</h2>
+                    <p class="text-dark-emphasis">We understand the importance of the data you rely on. With our platform, you can <span class="text_dark_primary fw-medium">monitor the entire fleet easily</span>, including their live locations, statuses, hours of service, violations daily activities, and more — all in one place.</p>
+                    <button class="btn_primary rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                        <span class="fs_6">Learn more</span>
+                        <span class="mdi mdi-chevron-right-circle iconTransform fs-6"></span>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2 text-end" data-aos="fade-left" data-aos-delay="300">
+                    <img src="assets/img/website_img.png" width="600" class="imageFixedRight img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="mb-3">
+                    <p class="text-center fs-5 text_dark_primary m-0 text-uppercase fw-semibold">Solutions we offer</p>
+                    <h2 class="text-center text_ui_dark fw-bold fs-1">Level up your operations</h2>
+                </div>
+                <p class="text-center text_ui_dark">We provide high-quality solutions tailored for all industries, enterprises, and small organizations. Our solutions are designed to support organizations, drivers, and their teams effectively and efficiently.</p>
+                <div class="row">
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">ELD Device</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Track, Log & Comply</p>
+                            <p class="text_ui_dark fs_7 mb-2">Our ELD solution ensures accurate tracking of duty hours, shifts, breaks, and violations. Simplify compliance processes and maintain detailed logs for hassle-free fleet management.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">Compliance</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Stay Compliant with Ease</p>
+                            <p class="text_ui_dark fs_7 mb-2">Ensure drivers comply with HOS regulations, tracking duty hours, breaks, shifts, live locations, and violations. Receive daily logs and reports for optimal management.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">Accountability</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Gain Full Visibility</p>
+                            <p class="text_ui_dark fs_7 mb-2">Gain better visibility into your workflows. Track team responsibilities and ensure everything stays well-managed and monitored for maximum productivity.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">Efficiency</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Maximize Efficiency</p>
+                            <p class="text_ui_dark fs_7 mb-2">Optimize operations with fuel-efficient routes, saving time and money while keeping tasks well-organized and streamlined.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">Roles</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Define Clear Roles</p>
+                            <p class="text_ui_dark fs_7 mb-2">Clearly define and monitor roles to understand responsibilities and tasks. Ensure smooth coordination and seamless workflow across your team.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 my-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="solutionDisplayCards h-100 p-3 pt-4 rounded-4 border">
+                            <h3 class="text-dark-emphasis fs_7 text-uppercase fw-semibold m-0">Fleet Safety</h3>
+                            <p class="text_dark_primary fs_4 mb-1 fw-semibold">Prioritize Fleet Safety</p>
+                            <p class="text_ui_dark fs_7 mb-2">Ensure safety with pre-duty vehicle inspections and reports, preventing accidents and costly damages.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn_dark p-2 px-3 rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                                    <span class="fs_7">Learn more</span>
+                                    <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="row m-0 align-items-center">
+                <div class="col-lg-6 col-md-6 col-12 my-2" data-aos="zoom-out" data-aos-delay="250">
+                    <img src="assets/img/driver_app_graphics.png" width="550" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <h2 class="text_ui_dark fw-bold display-5"><span class="text_primary_shade">Smart app</span> for your smart drivers</h2>
+                    <p class="text-dark-emphasis">Captrax driver app is a user-friendly application which helps drivers to easily manage their daily tasks. They can switch their status, track and manage daily logs, monitor hours of service (HOS), view assigned work, and check scores—all in one place.</p>
+                    <div class="application_links d-flex align-items-center gap-1">
+                        <img src="assets/img/google_play.webp" width="160" alt="">
+                        <img src="assets/img/app_store.webp" width="160" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="mb-3">
+                    <p class="text-center fs-5 text_dark_primary m-0 text-uppercase fw-semibold">Why choose captrax</p>
+                    <h2 class="text-center text_ui_dark fw-bold fs-1">What makes us different</h2>
+                    <div class="heading_underline mx-auto"></div>
+                </div>
+                <div>
+                    <div class="aboutDisplayCards rounded p-3 my-4">
+                        <h3 class="fs-5 fw-semibold m-0">Efficient System</h3>
+                        <p class="text_ui_dark fw-medium mb-2">Streamline Your Operations with Ease</p>
+                        <p class="fs_6 text_ui_dark">Our advanced system ensures seamless tracking and monitoring, empowering you to manage your tasks effortlessly. Whether it’s organizing schedules or monitoring progress, our tools are designed to enhance productivity and save time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-       $(".nav_dropdown_link").on('click', function () {
+        AOS.init();
+        $(".nav_dropdown_link").on('click', function () {
             const menu = $(this).siblings('.nav_dropdown_menu'); // Sibling menu ko target karna
             
             // Toggle the 'active' class on the parent of the clicked link
@@ -564,21 +733,21 @@
         // });
 
         $(".dropdownState").click(function () {
-    const $dropdownElement = $(this).siblings(".collapse");
+            const $dropdownElement = $(this).siblings(".collapse");
 
-    // Collapse all other dropdowns
-    $(".collapse").not($dropdownElement).removeClass("show");
-    $(".dropdownState").not(this).removeClass("active");
+            // Collapse all other dropdowns
+            $(".collapse").not($dropdownElement).removeClass("show");
+            $(".dropdownState").not(this).removeClass("active");
 
-    // Toggle current dropdown and active class based on its visibility
-    if ($dropdownElement.hasClass("show")) {
-        $dropdownElement.removeClass("show");
-        $(this).removeClass("active");
-    } else {
-        $dropdownElement.addClass("show");
-        $(this).addClass("active");
-    }
-});
+            // Toggle current dropdown and active class based on its visibility
+            if ($dropdownElement.hasClass("show")) {
+                $dropdownElement.removeClass("show");
+                $(this).removeClass("active");
+            } else {
+                $dropdownElement.addClass("show");
+                $(this).addClass("active");
+            }
+        });
 
         // Handle collapse hide event to remove active class
         $(".collapse").on("hidden.bs.collapse", function () {
@@ -589,9 +758,6 @@
         $(".collapse").on("shown.bs.collapse", function () {
             $(this).siblings(".dropdownState").addClass("active");
         });
-
-
-
     </script>
 </body>
 

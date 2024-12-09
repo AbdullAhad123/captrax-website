@@ -30,6 +30,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.heading_underline {
+    height: 3px;
+    width: 140px;
+    background: var(--primary);
+}
+
+#content {
+    overflow-x: hidden;
+}
+
 /* text  */
 
 .text_light {
@@ -46,6 +56,12 @@ html {
 
 .text_primary {
     color: var(--primary) !important;
+}
+
+.text_primary_shade {
+    background: linear-gradient(45deg, #2ada6a, #0bad49);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .text_light_primary {
@@ -155,6 +171,34 @@ html {
 .btn_primary:hover {
     color: var(--white) !important;
 }
+
+.iconTransform {
+    transition: 0.25s;
+}
+
+.iconBtn:hover.iconBtn .iconTransform {
+    transform: translateX(4px);
+}
+
+
+.btn_dark {
+    text-decoration: none !important;
+    /* background: linear-gradient(271deg, var(--ui_dark), var(--ui_dark)); */
+    background: var(--ui_dark);
+    border: 1px solid var(--ui_dark);
+    color: var(--ui_white) !important;
+    fill: var(--ui_white) !important;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_dark:hover {
+    background: var(--dark);
+    border: 1px solid var(--dark);
+    color: var(--white) !important;
+}
+
 
 /* navbar  */
 .logoTxt {
@@ -312,4 +356,16 @@ html {
 
 .navSidebarlink.active .mdi-chevron-right::before {
     rotate: 90deg;
+}
+
+.application_links img {
+    height: auto;
+    width: 150px;
+}
+
+@media (max-width: 320px) {
+    .application_links img {
+        height: auto;
+        width: 50% !important;
+    }
 }
