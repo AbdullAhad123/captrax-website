@@ -215,6 +215,7 @@ html {
     .logoTxt {
         display: none !important;
     }
+
     .topbarlinks {
         font-size: 0.785rem !important;
     }
@@ -372,4 +373,27 @@ html {
         height: auto;
         width: 50% !important;
     }
+}
+
+/* footer  */
+footer {
+    height: fit-content;
+    width: auto;
+    background: #f3f3f3;
+}
+
+.footer_underline {
+    height: 3px;
+    width: 65px;
+    background: var(--dark_primary);
+}
+
+.footer_links {
+    color: var(--text_dark) !important;
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+
+.footer_links:hover {
+    color: var(--dark_primary) !important;
 }
