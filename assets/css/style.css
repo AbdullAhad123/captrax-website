@@ -68,6 +68,7 @@ header {
     /* background: #f4fbf7; */
     background: #f4fbf733;
 }
+
 .solutionDisplayCards {
     height: auto;
     width: auto;
@@ -78,4 +79,56 @@ header {
 .solutionDisplayCards:hover {
     background: var(--ui_white);
     box-shadow: 0 3px 8px 2px #00000021;
+}
+
+/* about  */
+.aboutDisplayCards {
+    height: fit-content;
+    width: auto;
+    overflow: hidden;
+}
+
+.solid_bg_1 {
+    /* background: linear-gradient(45deg, #eafbf1, #c2ebd5); */
+    background: linear-gradient(45deg, #effaf4, #c1f0d6);
+}
+
+.image_bg {
+    min-height: 500px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-45deg, #00000000, #000000af), url(../img/features_dropdown_img.jpg) center;
+    background-size: cover;
+}
+
+.solid_bg_2 {
+    background: linear-gradient(-45deg, #effaf4, #c1f0d6);
+}
+
+.aboutDisplayImage {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .aboutDisplayImage {
+        height: 250px !important;
+    }
+}
+
+.aboutDisplayImage img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutStatsCard {
+    background: #0d0d0d9c;
+    border: 1px solid #ffffff5a !important;
 }

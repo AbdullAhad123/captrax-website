@@ -92,6 +92,10 @@ html {
     color: #ffffffc7 !important;
 }
 
+.text_title {
+    color: #295c3c;
+}
+
 /* backgrounds  */
 
 .bg_primary {
@@ -360,7 +364,7 @@ html {
 
 .application_links img {
     height: auto;
-    width: 150px;
+    width: 140px;
 }
 
 @media (max-width: 320px) {
