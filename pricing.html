@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        .pricingWrapperSteps {
+            display: none
+        }
+        .pricingWrapperSteps.active {
+            display: block;
+        }
+
         .inputField {
             padding: 0.7rem 0.8rem;
         }
@@ -31,10 +38,28 @@
         }
         
         .selectBox:hover,
-        .selectBox.active {
+        .selectBox.selected {
             background: #D1E7DD;
             border: 1px solid #b3c3b8;
             color: var(--title_primary);
+        }
+        @media (max-width: 768px) {
+            .button_fixed_sm button {
+                width: 100%;
+            }
+        }
+
+        .imageWrapper {
+            position: relative;
+        }
+
+        .imageWrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
@@ -43,7 +68,7 @@
     <div id="content">
 
         <section>
-            <nav class="navbar navbar-expand-lg navbarSection">
+            <nav class="navbar navbar-expand-lg navbarSection border-bottom">
                 <div class="container-lg wrapper">
                     <a class="navbar-brand m-0 d-inline-flex align-items-center" href="#">
                         <img src="assets/img/captrax_logo.png" width="65" height="65" alt="captrax logo">
@@ -490,8 +515,8 @@
             </div>
         </section>
 
-        <article id="pricingWrapper">
-            <section id="companyInfo">
+        <article id="pricingWrapper" class="position-relative">
+            <section id="companyInfo" class="pricingWrapperSteps active">
                 <div class="row">
                     <div class="col-lg-6 col-md-7 col-12">
                         <div class="contentWrapperBox p-md-5 p-3 py-4">
@@ -529,7 +554,7 @@
                                     </div>
                                     <div class="col-12 mb-4">
                                         <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Company Size</label>
-                                        <div class="row m-0">
+                                        <div class="row m-0 selectBoxWrapper">
                                             <div class="col-4 my-1 px-1">
                                                 <div class="selectBox inputField rounded text-center">
                                                     <span class="fs_7">1 - 5</span>
@@ -562,18 +587,23 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-12">
+                                        <div class="text-end button_fixed_sm">
+                                            <button class="btn_primary fs_6">Continue</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5 col-12 bg-danger">
+                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
                         <img src="assets/img/features_dropdown_img.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </section>
         </article>
 
-        <section class="contactSection py-3">
+        <!-- <section class="contactSection py-3">
             <div class="container-lg wrapper">
                 <div class="contactCard p-3 py-4 gradient_bg_primary rounded-4 text-center">
                     <h2 class="text_ui_light my-2 fw-semibold fs-3">Are you looking for support?</h2>
@@ -586,7 +616,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer class="py-4">
             <div class="container-lg wrapper">
@@ -727,6 +757,12 @@
         $(".collapse").on("shown.bs.collapse", function () {
             $(this).siblings(".dropdownState").addClass("active");
         });
+
+        // select 
+        $(".selectBox").on('click', function () {
+            $(this).closest('.selectBoxWrapper').find('.selectBox').removeClass('selected');
+            $(this).addClass('selected')
+        })
     </script>
 </body>
 
