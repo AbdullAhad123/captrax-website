@@ -7,6 +7,7 @@
     --primary: #1EB858;
     --dark_primary: #13a24a;
     --light_primary: #39D472;
+    --title_primary: #295c3c;
     --secondary: #119ac0;
     --dark_secondary: #006885;
     --light_secondary: #40b0ce;
@@ -93,7 +94,7 @@ html {
 }
 
 .text_title {
-    color: #295c3c;
+    color: var(--title_primary) !important;
 }
 
 /* backgrounds  */

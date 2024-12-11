@@ -173,6 +173,7 @@ header {
     width: auto;
     position: relative;
 }
+
 .contactSection::after {
     content: "";
     position: absolute;
@@ -184,28 +185,8 @@ header {
     background: #f3f3f3;
     z-index: 0;
 }
+
 .contactCard {
     position: relative;
     z-index: 1;
-}
-
-/* footer  */
-footer {
-    height: fit-content;
-    width: auto;
-    background: #f3f3f3;
-}
-.footer_underline {
-    height: 3px;
-    width: 65px;
-    background: var(--dark_primary);
-}
-
-.footer_links {
-    color: var(--text_dark) !important;
-    text-decoration: none !important;
-    transition: 0.3s;
-}
-.footer_links:hover {
-    color: var(--dark_primary) !important;
 }
