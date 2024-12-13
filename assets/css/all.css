@@ -116,6 +116,10 @@ html {
     background: var(--secondary) !important;
 }
 
+.bg_light {
+    background: var(--light) !important;
+}
+
 /* default  */
 .wrapper {
     max-width: 1240px !important;
@@ -158,6 +162,23 @@ html {
 }
 
 .btn_outline_primary:hover {
+    background: var(--primary);
+    color: var(--ui_white) !important;
+    fill: var(--ui_white) !important;
+}
+
+.btn_invert_primary {
+    text-decoration: none !important;
+    background: #f6fffa;
+    border: 1px solid var(--dark_primary);
+    color: var(--dark_primary) !important;
+    fill: var(--dark_primary) !important;
+    border-radius: 5px;
+    padding: 0.375rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_invert_primary:hover {
     background: var(--primary);
     color: var(--ui_white) !important;
     fill: var(--ui_white) !important;

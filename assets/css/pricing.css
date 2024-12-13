@@ -1,0 +1,75 @@
+.pricingWrapperSteps {
+    display: none
+}
+.pricingWrapperSteps.active {
+    display: block;
+}
+
+.inputField {
+    border: 1px solid #ccc !important;
+    padding: 0.7rem 0.8rem !important;
+}
+
+.inputField::placeholder {
+    color: #8b8b8b !important;
+}
+
+.inputField:focus {
+    border: 1px solid var(--dark_primary) !important;
+}
+
+.selectBox {
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selectBox:hover,
+.selectBox.selected {
+    background: #e7f3ed;
+    border: 1px solid #b3c3b8;
+    color: var(--title_primary);
+}
+
+.selectBoxMultiple {
+    border: 1px solid #ccc;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selectBoxMultiple:hover,
+.selectBoxMultiple.selected {
+    background: #e7f3ed;
+    border: 1px solid #b3c3b8;
+    color: var(--title_primary);
+}
+
+.selectBoxMultiple img {
+    filter: grayscale(1);
+}
+
+.selectBoxMultiple.selected img {
+    filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+    .button_fixed_sm button {
+        width: 100%;
+    }
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
