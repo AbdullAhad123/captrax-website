@@ -11,6 +11,8 @@
     --secondary: #119ac0;
     --dark_secondary: #006885;
     --light_secondary: #40b0ce;
+    --gray: #dcdcdc;
+    --dark_gray: #cfcfcf;
     /* --light: #e8f3ef;
     --dark: #403D39; */
     --ui_white: #fdfffe;
@@ -120,6 +122,10 @@ html {
     background: var(--light) !important;
 }
 
+.bg_ui_light {
+    background: var(--ui_white) !important;
+}
+
 /* default  */
 .wrapper {
     max-width: 1240px !important;
@@ -147,6 +153,31 @@ html {
 
 .fs_vs {
     font-size: 0.75rem !important;
+}
+
+.inputField {
+    border: 1px solid #ccc !important;
+    padding: 0.7rem 0.8rem !important;
+}
+
+.inputField::placeholder {
+    color: #8b8b8b !important;
+}
+
+.inputField:focus {
+    border: 1px solid var(--dark_primary) !important;
+}
+
+.inputPadding {
+    padding: 0.7rem 0.8rem !important;
+}
+
+.link_primary_hover {
+    transition: 0.3s;
+}
+
+.link_primary_hover:hover {
+    color: var(--dark_primary) !important
 }
 
 /* buttons  */
@@ -199,6 +230,21 @@ html {
     color: var(--white) !important;
 }
 
+.btn_gray {
+    text-decoration: none !important;
+    background: var(--gray);
+    border: 1px solid var(--dark_gray);
+    color: var(--ui_dark) !important;
+    fill: var(--ui_dark) !important;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_gray:hover {
+    background: var(--dark_gray) !important;
+}
+
 .iconTransform {
     transition: 0.25s;
 }
@@ -232,6 +278,12 @@ html {
     background: linear-gradient(178deg, #257a45, #28aa5a, #56f18e);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+#topbar {
+    height: auto;
+    width: auto;
+    padding: 0.6rem 0;
 }
 
 @media (max-width: 425px) {

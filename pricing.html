@@ -15,11 +15,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        .exploreMoreLinks {
+            background: #f8fcfa;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.4rem 0.65rem;
+            transition: 0.25s;
+        }
+        .exploreMoreLinks:hover {
+            background: #eaf3ed;
+            border: 1px solid var(--dark_primary);
+            color: var(--dark_primary);
+        }
     </style>
 </head>
 <body>
     
     <div id="content">
+
+        <section id="topbar" class="gradient_bg_primary">
+            <div class="container-lg wrapper">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                    <a href="#" class="text_ui_light d-inline-flex align-items-center gap-1 text-decoration-none">
+                        <i class='bx bxs-envelope'></i>
+                        <span class="fs_7 text-decoration-underline fw-medium topbarlinks">info@captrax.com</span>
+                    </a>
+                    <a href="#" class="text_ui_light d-inline-flex align-items-center gap-1 text-decoration-none">
+                        <i class="bx bxs-phone"></i>
+                        <span class="fs_7 text-decoration-underline fw-medium topbarlinks">(855) 344 0004</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <section>
             <nav class="navbar navbar-expand-lg navbarSection border-bottom">
@@ -29,7 +56,7 @@
                         <span class="logoTxt fw-bold fs-4 text-uppercase">Captrax</span>
                     </a>
                     <div class="d-flex align-items-center gap-md-1">
-                        <a href="#" class="btn_primary d-lg-none d-sm-inline-flex  align-items-center rounded-pill">
+                        <a href="login.html" class="btn_primary d-lg-none d-sm-inline-flex  align-items-center rounded-pill">
                             <span class="fs_6">Login</span>
                             <i class="bx bx-right-arrow-alt"></i>
                         </a>
@@ -271,7 +298,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="btn_primary d-inline-flex align-items-center rounded-pill">
+                            <a href="login.html" class="btn_primary d-inline-flex align-items-center rounded-pill">
                                 <span class="fs_6">Login</span>
                                 <i class="bx bx-right-arrow-alt"></i>
                             </a>
@@ -464,7 +491,8 @@
                     </ul>
                 </div>
                 <div class="p-3">
-                    <button class="btn_primary w-100 text-center rounded-pill">Login</button>
+                    <a href="login.html" class="btn_primary d-flex align-item-center justify-content-center w-100 text-center rounded-pill">Login</a>
+                    <p class="my-2 text-center text-secondary fs_xs">Don't have an account? <a href="signup.html" class="link_primary_hover text-secondary">Create one</a></p>
                 </div>
             </div>
         </section>
@@ -765,7 +793,7 @@
                                     <div class="col-12 mb-4">
                                         <p class="fs_7 text_ui_dark mb-2">By submitting your request, you consent to the processing of your personal data in accordance with our <a href="#" class="text_primary">privacy policy</a>.</p>
                                         <div class="text-end button_fixed_sm my-3">
-                                            <button class="btn_primary fs_6">Submit your request</button>
+                                            <button class="btn_primary fs_6 continueNextStep">Submit your request</button>
                                         </div>
                                     </div>
                                 </div>
@@ -774,6 +802,57 @@
                     </div>
                     <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
                         <img src="assets/img/features_dropdown_img.jpg" class="img-fluid" loading="lazy" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="submitSuccess" class="pricingWrapperSteps">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <div class="contentWrapperBox p-md-5 p-3 py-4">
+                            <div class="mb-2">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <p class="fw-semibold m-0 text_dark_primary">Perfect <span class="mdi mdi-thumb-up fs_5"></span></p>
+                            </div>
+                            <h1 class="fw-semibold fs-3 text_ui_dark">Request Submitted</h1>
+                            <div class="heading_underline mb-2"></div>
+                            <p class="fs_6 text_ui_dark">Your request has been successfully submitted. Our team will review your application and contact you shortly. The process usually takes 1 to 3 business days.</p>
+                            <div class="my-2 mb-4">
+                                <a href="index.html" class="btn_invert_primary w-100 inputPadding d-flex align-items-center justify-content-center gap-1">
+                                    <span class="fs_7">Back to home</span>
+                                </a>
+                            </div>
+                            <h2 class="text_ui_dark fs-6 fw-medium">Or explore more</h2>
+                            <div class="d-flex flex-wrap align-items-center gap-2">
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">About us</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">Mission and vision</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">News and blogs</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">Videos</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">Resources and guides</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                                <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
+                                    <span class="fs_7">Documentation</span>
+                                    <span class="mdi mdi-arrow-right fs_7"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
+                        <img src="assets/img/company_bg.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </section>
@@ -853,8 +932,8 @@
                         <div class="footer_underline mb-3"></div>
                         <p class="fs_6 text_darker">Captrax can help improve your business operations, no matter the size of your fleet. Let's start your journey towards success with captrax</p>
                         <div class="d-flex align-items-center gap-sm-3 gap-2 flex-wrap my-4">
-                            <a href="#" class="btn_primary d-inline-flex align-items-center rounded-pill">
-                                <span class="fs_6">Get a demo</span>
+                            <a href="pricing.html" class="btn_primary d-inline-flex align-items-center rounded-pill">
+                                <span class="fs_6">Get a quote</span>
                             </a>
                             <a href="#" class="text_ui_dark fw-medium d-inline-flex align-items-center text-decoration-none">
                                 <i class="bx bxs-phone fs_5"></i>

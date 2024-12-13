@@ -5,19 +5,6 @@
     display: block;
 }
 
-.inputField {
-    border: 1px solid #ccc !important;
-    padding: 0.7rem 0.8rem !important;
-}
-
-.inputField::placeholder {
-    color: #8b8b8b !important;
-}
-
-.inputField:focus {
-    border: 1px solid var(--dark_primary) !important;
-}
-
 .selectBox {
     border: 1px solid #ccc;
     background: transparent;
