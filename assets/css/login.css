@@ -1,0 +1,65 @@
+/* login  */
+#loginContainer {
+    height: auto;
+    width: auto;
+}
+
+.loginImageContainer {
+    min-height: 100vh;
+    max-height: 100%;
+    position: relative;
+}
+
+.loginImageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.formContainer {
+    height: fit-content;
+    padding: 1.75rem;
+}
+
+.loginInputs {
+    background: #f8f8f8e3 !important;
+}
+
+.loginInputs:focus {
+    background: var(--ui_white) !important;
+}
+
+.passwordInputBox {
+    position: relative;
+}
+
+.passwordInputBox button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.togglePassBtn {
+    transition: 0.25s;
+}
+
+.togglePassBtn.hidden {
+    opacity: 0;
+}
+
+/* signup  */
+.formSteps {
+    display: none;
+}
+
+.formSteps.active {
+    display: block;
+}
+
+.btn_loader {
+    animation: loading 0.8s infinite linear;
+}

@@ -180,6 +180,37 @@ html {
     color: var(--dark_primary) !important
 }
 
+.inputFieldBg {
+    background: #f8f8f8e3 !important;
+}
+
+.inputFieldBg:focus {
+    background: var(--ui_white) !important;
+}
+
+/* modal  */
+.mediumSizedModal {
+    max-width: 600px !important;
+}
+
+/* bootstrap  */
+.custom-tooltip {
+    --bs-tooltip-bg: var(--title_primary);
+    --bs-tooltip-color: var(--bs-white);
+    font-size: 12px !important;
+}
+
+/* animation  */
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* buttons  */
 .btn_outline_primary {
     text-decoration: none !important;

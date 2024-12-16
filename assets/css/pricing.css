@@ -1,6 +1,7 @@
 .pricingWrapperSteps {
     display: none
 }
+
 .pricingWrapperSteps.active {
     display: block;
 }
@@ -59,4 +60,18 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.exploreMoreLinks {
+    background: #f8fcfa;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 0.4rem 0.65rem;
+    transition: 0.25s;
+}
+
+.exploreMoreLinks:hover {
+    background: #eaf3ed;
+    border: 1px solid var(--dark_primary);
+    color: var(--dark_primary);
 }

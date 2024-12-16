@@ -955,48 +955,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/navbar.js"></script>
     <script>
         AOS.init();
-        $(".nav_dropdown_link").on('click', function () {
-            const menu = $(this).siblings('.nav_dropdown_menu');
-            
-            $(this).parent().toggleClass('active'); 
-            
-            if ($(this).parent().hasClass("active")) {
-                menu.addClass('show');
-                menu.stop(true, true).slideDown(400);
-            } else {
-                menu.removeClass('show');
-                menu.stop(true, true).slideUp(400);
-            }
-            
-            $(".nav_dropdown").not($(this).parent()).removeClass('active').find('.nav_dropdown_menu').removeClass('show').stop(true, true).slideUp(400);
-        });
-
-        $(".dropdownState").click(function () {
-            const $dropdownElement = $(this).siblings(".collapse");
-
-            $(".collapse").not($dropdownElement).removeClass("show");
-            $(".dropdownState").not(this).removeClass("active");
-
-            if ($dropdownElement.hasClass("show")) {
-                $dropdownElement.removeClass("show");
-                $(this).removeClass("active");
-            } else {
-                $dropdownElement.addClass("show");
-                $(this).addClass("active");
-            }
-        });
-
-        // Handle collapse hide event to remove active class
-        $(".collapse").on("hidden.bs.collapse", function () {
-            $(this).siblings(".dropdownState").removeClass("active");
-        });
-
-        // Handle collapse show event to add active class
-        $(".collapse").on("shown.bs.collapse", function () {
-            $(this).siblings(".dropdownState").addClass("active");
-        });
     </script>
 </body>
 
