@@ -276,6 +276,22 @@ html {
     background: var(--dark_gray) !important;
 }
 
+.btn_outline_gray {
+    text-decoration: none !important;
+    background: transparent;
+    border: 1px solid var(--gray);
+    color: var(--ui_dark) !important;
+    fill: var(--ui_dark) !important;
+    border-radius: 5px;
+    padding: 0.375rem 1.5rem;
+    transition: 0.25s;
+}
+
+.btn_outline_gray:hover {
+    border: 1px solid var(--dark_gray);
+    background: var(--gray) !important;
+}
+
 .iconTransform {
     transition: 0.25s;
 }
