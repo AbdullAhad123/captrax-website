@@ -1,0 +1,158 @@
+header {
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+#hero {
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient(0deg, #141414c3, #13131352), url(../img/company_bg.jpg) top fixed;
+    background-size: cover;
+}
+
+.aboutHeaderImage {
+    height: 520px;
+    width: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutHeaderImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .aboutHeaderImage {
+        height: 400px;
+    }
+}
+
+/* contact  */
+.contactSection {
+    height: fit-content;
+    width: auto;
+    position: relative;
+}
+
+.contactSection::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background: #f3f3f3;
+    z-index: 0;
+}
+
+.contactCard {
+    position: relative;
+    z-index: 1;
+}
+
+.displayFeaturedCard {
+    background: var(--ui_white);
+    transition: 0.3s;
+    position: relative;
+}
+
+.displayFeaturedCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px;
+    border-radius: 5px;
+}
+
+.displayFeaturedCard.cardNum1 {
+    border: 1px solid #96b5b9;
+}
+
+.displayFeaturedCard.cardNum2 {
+    border: 1px solid #e0d3bf;
+}
+
+.displayFeaturedCard.cardNum3 {
+    border: 1px solid #bdd2e8;
+}
+
+.displayFeaturedCard.cardNum1::after {
+    background-color: #2e9cab;
+}
+
+.displayFeaturedCard.cardNum2::after {
+    background-color: #e28800;
+}
+
+.displayFeaturedCard.cardNum3::after {
+    background-color: #18538e;
+}
+
+.displayFeaturedIcon {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.displayFeaturedCard.cardNum1 .displayFeaturedIcon {
+    background: #d8f3f7;
+    color: #2e9cab;
+}
+
+.displayFeaturedCard.cardNum2 .displayFeaturedIcon {
+    background: #f6e9d6;
+    color: #e28800;
+}
+
+.displayFeaturedCard.cardNum3 .displayFeaturedIcon {
+    background: #dbedff;
+    color: #18538e;
+}
+
+.displayFeaturedCard:hover {
+    scale: 1.01;
+    box-shadow: 0 0 10px 1px #00000021;
+}
+
+.aboutInfoPills {
+    border: 1px solid #aac6b6b5;
+    background: #cbf4dd52;
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    user-select: none;
+    color: #3a5244;
+}
+
+/* mission  */
+#missionSection {
+    background: #253029;
+}
+
+.missionDisplayCard {
+    height: 100%;
+    width: auto;
+    background: #e8f7ef;
+    border-radius: 15px;
+    border: 1px solid #c9dace;
+}
+
+.iconContainer {
+    min-height: 45px;
+    min-width: 45px;
+    background: #295c3c;
+    color: #e8f7ef;
+    font-size: 1.4rem;
+}

@@ -4,20 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pricing - Captrax</title>
+    <title>About - Captrax</title>
     <link rel="shortcut icon" href="assets/img/captrax_favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/img/captrax_favicon.png">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/all.css">
-    <link rel="stylesheet" href="assets/css/pricing.css">
+    <link rel="stylesheet" href="assets/css/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.4.47/css/materialdesignicons.min.css" integrity="sha512-/k658G6UsCvbkGRB3vPXpsPHgWeduJwiWGPCGS14IQw3xpr63AEMdA8nMYG2gmYkXitQxDTn6iiK/2fD4T87qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
     <div id="content">
-
+        
         <section id="topbar" class="gradient_bg_primary">
             <div class="container-lg wrapper">
                 <div class="d-flex align-items-center justify-content-between gap-2">
@@ -496,366 +497,229 @@
             </div>
         </section>
 
-        <article id="pricingWrapper" class="position-relative">
-            <section id="companyInfo" class="pricingWrapperSteps active">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <div class="contentWrapperBox p-md-5 p-3 py-4">
-                            <div class="mb-2">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <p class="fw-semibold text-uppercase m-0 text_dark_primary">Get a Quote</p>
-                                <p class="fs_7 fw-medium m-0 text-dark-emphasis">Step 1 out of 4</p>
-                            </div>
-                            <h1 class="fw-semibold fs-3 text_ui_dark">Start with your team</h1>
-                            <div class="heading_underline mb-2"></div>
-                            <p class="fs_6 text_ui_dark my-1">Tell us about your company. This will help us tailored your needs and give you the best possible experience.</p>
-                            <form class="my-4" id="companyInfoForm">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Company or Organization Name</label>
-                                        <input type="text" name="organizationName" class="form-control text_ui_dark shadow-none inputField fs_7 inputFieldBg text-capitalize" id="organizationName" placeholder="ex: Captrax">
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">This field is required*</span>
-                                    </div>
-                                    <div class="col-sm-6 col-12 mb-4">
-                                        <label for="firstName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">First Name</label>
-                                        <input type="text" name="firstName" class="form-control text_ui_dark shadow-none inputField fs_7 inputFieldBg text-capitalize" id="firstName" placeholder="John">
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">This field is required*</span>
-                                    </div>
-                                    <div class="col-sm-6 col-12 mb-4">
-                                        <label for="lastName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Last Name</label>
-                                        <input type="text" name="lastName" class="form-control text_ui_dark shadow-none inputField fs_7 inputFieldBg text-capitalize" id="lastName" placeholder="Doe">
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">This field is required*</span>
-                                    </div>
-                                    <div class="col-sm-6 col-12 mb-4">
-                                        <label for="userEmail" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Email Address</label>
-                                        <input type="text" name="userEmail" class="form-control text_ui_dark shadow-none inputField fs_7 inputFieldBg" id="userEmail" placeholder="johndoe@example.com">
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">Invalid email address</span>
-                                    </div>
-                                    <div class="col-sm-6 col-12 mb-4">
-                                        <label for="userPhone" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Phone Number</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text inputField fs_7 gap-1" id="basic-addon1">
-                                                <img src="assets/img/usa_flag.png" width="20" height="20" alt="">
-                                                <span class="fw-medium fs_7 text_ui_dark">+1</span>
-                                            </span>
-                                            <input type="text" name="userPhone" class="form-control text_ui_dark shadow-none inputField fs_7 inputFieldBg" id="userPhone" placeholder="(855) 344 0004">
-                                        </div>
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">This field is required*</span>
-                                    </div>
-                                    <div class="col-12 mb-4">
-                                        <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Company Size</label>
-                                        <div class="row m-0 selectBoxWrapper">
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">1 - 5</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">6 - 29</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">30 - 99</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">100 - 499</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">500 - 1000</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">1000+</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">Select one option from above</span>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="text-end button_fixed_sm">
-                                            <button class="btn_primary fs_6 continueNextStep">Next</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
-                        <img src="assets/img/company_bg.jpg" class="img-fluid" alt="">
+        <header class="py-4">
+            <div class="container-lg wrapper">
+                <div id="hero" class="rounded-5 d-flex align-items-center justify-content-between py-5">
+                    <div class="col-lg-9 col-md-10 text-center mx-auto col-12">
+                        <h1 class="text_ui_light fw-bold my-1 display-6" data-aos="fade-up" data-aos-delay="400">Creative minds, Engineering world-class fleet management solutions</h1>
+                        <p class="text-white-75 my-2" data-aos="fade-up" data-aos-delay="500">A dedicated team of innovators, developing world-class fleet management and tracking solutions that enhance efficiency, drive growth, and ensure security for our valued customers.</p>
                     </div>
                 </div>
-            </section>
-            <section id="assetsType" class="pricingWrapperSteps">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <div class="contentWrapperBox p-md-5 p-3 py-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <button class="btn_outline_gray d-inline-flex align-items-center mb-2 backPrevStep">
-                                    <span class="mdi mdi-arrow-left fs_7"></span>
-                                    <span class="fs_7">Back</span>
-                                </button>
-                                <p class="fs_7 fw-medium m-0 text-dark-emphasis">Step 2 out of 4</p>
-                            </div>
-                            <h1 class="fw-semibold fs-3 text_ui_dark">Types of assets</h1>
-                            <div class="heading_underline mb-2"></div>
-                            <p class="fs_6 text_ui_dark my-1">Select the types of assets you are working with in your fleet to help us better understand your needs.</p>
-                            <form class="my-5" id="companyInfoForm">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Choose Multiple</label>
-                                        <div class="row m-0 selectBoxMultipleWrapper">
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/sedan_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Cars</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/van_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Vans</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/bus_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Buses</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/trailer_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Trailers</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/truck_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Trucks</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded text-center">
-                                                    <img src="assets/img/tractor_icon.png" width="50" height="50" alt="">
-                                                    <span class="fs_7 fw-medium">Others</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">Select atleast one option from the above</span>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="text-end button_fixed_sm">
-                                            <button class="btn_primary fs_6 continueNextStep">Next</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
-                        <img src="assets/img/assest_bg.jpg" class="img-fluid" loading="lazy" alt="">
-                    </div>
+            </div>
+        </header>
+        
+        <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="mb-3">
+                    <p class="text-center fs-5 text_dark_primary m-0 text-uppercase fw-semibold">explore</p>
+                    <h2 class="text-center text_ui_dark fw-bold fs-1">About Captrax</h2>
+                    <div class="heading_underline mx-auto"></div>
                 </div>
-            </section>
-            <section id="assetsNumber" class="pricingWrapperSteps">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <div class="contentWrapperBox p-md-5 p-3 py-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <button class="btn_outline_gray d-inline-flex align-items-center mb-2 backPrevStep">
-                                    <span class="mdi mdi-arrow-left fs_7"></span>
-                                    <span class="fs_7">Back</span>
-                                </button>
-                                <p class="fs_7 fw-medium m-0 text-dark-emphasis">Step 3 out of 4</p>
+                <div class="row align-items-center my-4">
+                    <div class="col-lg-6 col-md-6 col-12 my-3">
+                        <div class="mb-3">
+                            <div data-aos="fade-right" data-aos-delay="400">
+                                <h2 class="text_ui_dark fw-semibold mb-1">Discover who we are</h2>
+                                <div class="heading_underline mb-3 "></div>
                             </div>
-                            <h1 class="fw-semibold fs-3 text_ui_dark">Vehicles or assets</h1>
-                            <div class="heading_underline mb-2"></div>
-                            <p class="fs_6 text_ui_dark my-1">Select a range of number of vehicles or assets you have in your fleet to help us better understand your needs.</p>
-                            <form class="my-5" id="companyInfoForm">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Choose one</label>
-                                        <div class="row m-0 selectBoxWrapper">
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">1 - 5</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">6 - 29</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">30 - 99</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">100 - 499</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">500 - 2500</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 my-1 px-1">
-                                                <div class="selectBox inputField rounded text-center">
-                                                    <span class="fs_7">2500+</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">Select one option from the above</span>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="text-end button_fixed_sm">
-                                            <button class="btn_primary fs_6 continueNextStep">Next</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
-                        <img src="assets/img/fleet_bg.jpg" class="img-fluid" loading="lazy" alt="">
-                    </div>
-                </div>
-            </section>
-            <section id="featuresAddons" class="pricingWrapperSteps">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <div class="contentWrapperBox p-md-5 p-3 py-4">
-                            <div class="d-flex align-items-center justify-content-between mb-3">
-                                <button class="btn_outline_gray d-inline-flex align-items-center mb-2 backPrevStep">
-                                    <span class="mdi mdi-arrow-left fs_7"></span>
-                                    <span class="fs_7">Back</span>
-                                </button>
-                                <p class="fs_7 fw-medium m-0 text-dark-emphasis">Step 4 out of 4</p>
-                            </div>
-                            <h1 class="fw-semibold fs-3 text_ui_dark">Features & Services</h1>
-                            <div class="heading_underline mb-2"></div>
-                            <p class="fs_6 text_ui_dark my-1">Select the features and services you are interested in. It will help us better understand your needs.</p>
-                            <form class="my-4" id="companyInfoForm">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <label for="organizationName" class="form-label fw-medium mb-1 fs_7 text_ui_dark">Choose Multiple</label>
-                                        <div class="row m-0 selectBoxMultipleWrapper">
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/gps_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">GPS</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/eld_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">ELD</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/cam_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">Dash Cams</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/maintenance_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">Maintenance</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/route_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">Routing</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-4 col-6 my-1 px-1">
-                                                <div class="selectBoxMultiple inputField rounded d-flex align-items-center flex-column justify-content-center">
-                                                    <img src="assets/img/reports_icon.png" width="60" height="60" alt="">
-                                                    <span class="fs_6 mt-1 fw-medium">Others</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <span class="fst-italic errorText text-danger fs_vs d-none">Select atleast one option from the above</span>
-                                    </div>
-                                    <div class="col-12 mb-4">
-                                        <p class="fs_7 text_ui_dark mb-2">By submitting your request, you consent to the processing of your personal data in accordance with our <a href="#" class="text_primary">privacy policy</a>.</p>
-                                        <div class="text-end button_fixed_sm my-3">
-                                            <button class="btn_primary fs_6 continueNextStep">Submit your request</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
-                        <img src="assets/img/features_dropdown_img.jpg" class="img-fluid" loading="lazy" alt="">
-                    </div>
-                </div>
-            </section>
-            <section id="submitSuccess" class="pricingWrapperSteps">
-                <div class="row">
-                    <div class="col-lg-6 col-md-7 col-12">
-                        <div class="contentWrapperBox p-md-5 p-3 py-4">
-                            <div class="my-4 mb-5">
-                                <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <p class="fw-semibold m-0 text_dark_primary">Perfect <span class="mdi mdi-thumb-up fs_5"></span></p>
-                                </div>
-                                <h1 class="fw-semibold fs-3 text_ui_dark">Request Submitted</h1>
-                                <div class="heading_underline mb-2"></div>
-                                <p class="fs_6 text_ui_dark">Your request has been successfully submitted. Our team will review your application and contact you shortly. The process usually takes 1 to 3 business days.</p>
-                                <div class="my-2 mb-4">
-                                    <a href="index.html" class="btn_invert_primary w-100 inputPadding d-flex align-items-center justify-content-center gap-1">
-                                        <span class="fs_7">Back to home</span>
-                                    </a>
-                                </div>
-                                <h2 class="text_ui_dark fs-6 fw-medium">Or explore more</h2>
-                                <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">About us</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">Mission and vision</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">News and blogs</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">Videos</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">Resources and guides</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                    <a href="#" class="exploreMoreLinks rounded d-inline-flex align-items-center text-decoration-none gap-1">
-                                        <span class="fs_7">Documentation</span>
-                                        <span class="mdi mdi-arrow-right fs_7"></span>
-                                    </a>
-                                </div>
+                            <p class="text-dark-emphasis mb-1" data-aos="fade-right" data-aos-delay="400">Captrax is a rapidly growing IoT company based in the United States, dedicated to revolutionizing the fleet management industry with innovative, customer-focused solutions designed to streamline operations and enhance productivity.</p>
+                            <p class="text-dark-emphasis mb-1" data-aos="fade-right" data-aos-delay="450">Our advanced fleet tracking system combines efficiency, reliability, and value, empowering businesses of all sizes to achieve optimized performance and real-time operational control with ease.</p>
+                            <div class="d-flex align-items-center flex-wrap my-3 gap-2">
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0" data-aos="zoom-in" data-aos-delay="450">
+                                    <span class="mdi mdi-check-circle text_title fs_5"></span>
+                                    <span class="fs_7">Flexible contracts</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0" data-aos="zoom-in" data-aos-delay="500">
+                                    <span class="mdi mdi-check-circle text_title fs_5"></span>
+                                    <span class="fs_7">Pay-as-you-go</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0" data-aos="zoom-in" data-aos-delay="550">
+                                    <span class="mdi mdi-check-circle text_title fs_5"></span>
+                                    <span class="fs_7">Affordable prices</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0" data-aos="zoom-in" data-aos-delay="600">
+                                    <span class="mdi mdi-check-circle text_title fs_5"></span>
+                                    <span class="fs_7">No termination fees</span>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5 d-md-block d-none imageWrapper">
-                        <img src="assets/img/company_bg.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-6 col-md-6 col-12 my-3 text-center">
+                        <img src="assets/img/about_us_img.png" width="550" class="img-fluid" alt="" data-aos="fade-left" data-aos-delay="500">
                     </div>
                 </div>
-            </section>
-        </article>
+                <div class="my-4">
+                    <div class="mb-4">
+                        <h2 class="text_ui_dark text-center fw-semibold mb-2">What shapes Captrax identity!</h2>
+                        <div class="heading_underline mb-3 mx-auto"></div>
+                    </div>
+                    <div class="row justify-content-center my-4">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="displayFeaturedCard cardNum1 rounded-3 p-3 py-4">
+                                <div class="displayFeaturedIcon rounded-circle">
+                                    <span class="mdi mdi-speedometer"></span>
+                                </div>
+                                <h3 class="text_ui_dark my-2 fw-semibold fs-5">Efficiency at its Core</h3>
+                                <p class="text-dark-emphasis fs_6 mb-2">Our advanced IoT-powered solutions streamline fleet operations by offering real-time tracking, intelligent analytics, and seamless integrations, ensuring maximum productivity with minimal effort.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3 pt-md-5" data-aos="fade-up" data-aos-delay="450">
+                            <div class="displayFeaturedCard cardNum2 rounded-3 p-3 py-4">
+                                <div class="displayFeaturedIcon rounded-circle">
+                                    <span class="mdi mdi-currency-usd"></span>
+                                </div>
+                                <h3 class="text_ui_dark my-2 fw-semibold fs-5">Budget-Friendly Solutions</h3>
+                                <p class="text-dark-emphasis fs_6 mb-3">We believe that quality doesn’t have to come at a premium. Captrax offers cost-effective fleet management systems that deliver exceptional value without compromising on performance or features.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12 my-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="displayFeaturedCard cardNum3 rounded-3 p-3 py-4">
+                                <div class="displayFeaturedIcon rounded-circle">
+                                    <span class="mdi mdi-shield-lock-outline"></span>
+                                </div>
+                                <h3 class="text_ui_dark my-2 fw-semibold fs-5">Trusted Reliability</h3>
+                                <p class="text-dark-emphasis fs_6 mb-3">Built on robust technology and backed by a dedicated team, our solutions ensure accurate data, consistent performance, and peace of mind for fleet operators worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section id="missionSection" class="my-5 py-5">
+            <div class="container-lg wrapper">
+                <div class="mb-4">
+                    <h2 class="text-center text_ui_light fw-semibold fs-1">Revolutionizing the future</h2>
+                    <div class="heading_underline mx-auto"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 my-3">
+                        <div class="missionDisplayCard p-3" data-aos="flip-right" data-aos-delay="300"  data-aos-duration="800">
+                            <div class="d-flex align-items-center gap-1 text_title">
+                                <span class="mdi mdi-bullseye-arrow fs-3"></span>
+                                <span class="fw-semibold text-uppercase">Our Mission</span>
+                            </div>
+                            <hr class="m-0 mb-3">
+                            <h3 class="fs_4 fw-semibold">Purpose and Goals</h3>
+                            <p class="fs_6 mb-4 text-dark-emphasis">Our mission is to simplify fleet management with a single, easy-to-use platform. We provide tools that optimize operations, enhance security, and minimize costs. With flexible and affordable pricing, we make advanced solutions accessible for businesses of all sizes, ensuring smooth management without compromise.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 my-3">
+                        <div class="missionDisplayCard p-3" data-aos="flip-right" data-aos-delay="400"  data-aos-duration="800">
+                            <div class="d-flex align-items-center gap-1 text_title">
+                                <span class="mdi mdi-eye-outline fs-3"></span>
+                                <span class="fw-semibold text-uppercase">Our Vision</span>
+                            </div>
+                            <hr class="m-0 mb-3">
+                            <h3 class="fs_4 fw-semibold">Future Outlook</h3>
+                            <p class="fs_6 mb-4 text-dark-emphasis">We aim to build a future where fleet management is efficient, scalable, and hassle-free. Our vision is to empower businesses with smart solutions that work seamlessly for startups, small enterprises, and established organizations alike, all on one integrated platform.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <div class="missionDisplayCard p-3" data-aos="flip-up" data-aos-delay="550"  data-aos-duration="800">
+                            <div class="d-flex align-items-center gap-1 text_title">
+                                <span class="mdi mdi-hand-coin-outline fs-3"></span>
+                                <span class="fw-semibold text-uppercase">Our Values</span>
+                            </div>
+                            <hr class="m-0 mb-3">
+                            <h3 class="fs_4 fw-semibold">Core Beliefs</h3>
+                            <p class="fs_6 mb-2 text-dark-emphasis">We believe in crafting solutions that are not only reliable, innovative, and customer-focused but also adaptable to evolving needs. Every decision we make is guided by integrity, ensuring transparency, fairness, and trust at every step. Efficiency lies at the heart of our approach, enabling us to deliver impactful solutions that save time, reduce costs, and simplify operations without compromising on quality.</p>
+                            <p class="fs_6 text-dark-emphasis">By incorporating sustainability into our efforts, we aim to create solutions that not only address current challenges but also contribute to long-term success for our customers and partners.</p>
+                            <div class="d-flex align-items-center flex-wrap my-3 mb-4 gap-2">
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0">
+                                    <span class="mdi mdi-account-heart text_title fs_5"></span>
+                                    <span class="fs_7">Customer Focus</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0">
+                                    <span class="mdi mdi-lightbulb-on text_title fs_5"></span>
+                                    <span class="fs_7">Innovation</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0">
+                                    <span class="mdi mdi-shield-star text_title fs_5"></span>
+                                    <span class="fs_7">Reliability</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0">
+                                    <span class="mdi mdi-truck-fast text_title fs_5"></span>
+                                    <span class="fs_7">Efficiency</span>
+                                </p>
+                                <p class="aboutInfoPills d-flex align-items-center gap-1 m-0">
+                                    <span class="mdi mdi-shape text_title fs_5"></span>
+                                    <span class="fs_7">Adaptability</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container-lg wrapper">
+                <div class="row align-items-center my-4">
+                    <div class="col-lg-6 col-md-6 col-12 my-3 text-center">
+                        <img src="assets/img/vision_image.png" width="550" class="img-fluid" alt="" data-aos="fade-right" data-aos-delay="400">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 my-3">
+                        <div class="mb-3">
+                            <h2 class="text_ui_dark fw-semibold mb-1">Take the next step with Captrax</h2>
+                            <div class="heading_underline mb-3 "></div>
+                            <p class="text-dark-emphasis mb-2">Ready to revolutionize your fleet management? Partner with Captrax and experience efficiency, reliability, and innovation like never before.</p>
+                            <div class="my-3">
+                                <div class="d-flex align-items-center gap-2 my-3">
+                                    <div class="iconContainer rounded d-inline-flex align-items-center justify-content-center">
+                                        <span class="mdi mdi-cog-outline"></span>
+                                    </div>
+                                    <div>
+                                        <h3 class="fs-6 fw-semibold m-0 text_title">Maximize Productivity</h3>
+                                        <p class="fs_6 m-0 text-dark-emphasis">Leverage our cutting-edge technology to streamline operations and enhance performance.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 my-3">
+                                    <div class="iconContainer rounded d-inline-flex align-items-center justify-content-center">
+                                        <span class="mdi mdi-shield-crown-outline"></span>
+                                    </div>
+                                    <div>
+                                        <h3 class="fs-6 fw-semibold m-0 text_title">Secure Your Future</h3>
+                                        <p class="fs_6 m-0 text-dark-emphasis">With our trusted solutions, safeguard your fleet and make data-driven decisions.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 my-3">
+                                    <div class="iconContainer rounded d-inline-flex align-items-center justify-content-center">
+                                        <span class="mdi mdi-trophy-award"></span>
+                                    </div>
+                                    <div>
+                                        <h3 class="fs-6 fw-semibold m-0 text_title">Stay Ahead</h3>
+                                        <p class="fs_6 m-0 text-dark-emphasis">Captrax is committed to helping you stay one step ahead in a rapidly evolving industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-dark-emphasis mb-2">Let’s work together to make fleet management seamless, cost-effective, and scalable for your business.</p>
+                            <div class="my-3">
+                                <a href="pricing.html" class="btn_primary d-inline-flex align-items-center gap-1 rounded-pill">
+                                    <span class="fs_6">Discover pricings</span>
+                                    <span class="mdi mdi-arrow-right fs_6"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactSection py-3">
+            <div class="container-lg wrapper">
+                <div class="contactCard p-3 py-4 gradient_bg_primary rounded-4 text-center">
+                    <h2 class="text_ui_light my-2 fw-semibold fs-3">Are you looking for support?</h2>
+                    <p class="text-white-75 fs_5 fw-medium mb-1">Our support team is here to help. Feel free to reach out if you have any questions or are facing issues with your system.</p>
+                    <div class="mt-3 mb-1">
+                        <a href="#" class="btn_dark rounded-pill iconBtn d-inline-flex align-items-center gap-1">
+                            <span class="fs_6">Contact us</span>
+                            <span class="mdi mdi-chevron-right-circle iconTransform fs_6"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="py-4">
             <div class="container-lg wrapper">
@@ -953,8 +817,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/pricingRequest.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
